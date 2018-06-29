@@ -7,6 +7,7 @@ from pynput import keyboard
 import datetime
 import pathlib
 import time
+import glob
 
 """
 This code was based on an example that can be found in:
@@ -14,16 +15,14 @@ https://pynput.readthedocs.io/en/latest/keyboard.html
 """
 
 def findDataNumber(user, directory):
-    """Search for the next data set number for 'user'."""
-    i = 1
-    while (True):
-        dataPath = directory + "/data" + user + "_" + str(i) +".txt"
-        if os.path.isfile(dataPath):
-            i += 1
-        else:
-            print("Number of data sets found: {0}".format(i-1))
-            print("Generating data set number {0} in path: '{1}'".format(i, dataPath))
-            return dataPath
+    """Search for the next data set file for 'user'."""
+    PATH_FORMAT = '{}/data{}_{}.txt'
+
+    i = len(glob.glob(PATH_FORMAT.format(directory, user, '*'))) + 1
+    dataPath = PATH_FORMAT.format(directory, user, i)
+    print("Number of data sets found: {0}".format(i-1))
+    print("Generating data set number {0} in path: '{1}'".format(i, dataPath))
+    return dataPath
 
 
 def on_press(key):
@@ -101,6 +100,3 @@ with keyboard.Listener(
             break
         else:
             print ("input must be 'y' or 'n'")
-
-		else :
-			print ("input must be 'y' or 'n'")
