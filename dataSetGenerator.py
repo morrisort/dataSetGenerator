@@ -7,7 +7,6 @@ from pynput import keyboard
 import datetime
 import pathlib
 import time
-startTime = None
 
 """
 This code was based on an example that can be found in:
