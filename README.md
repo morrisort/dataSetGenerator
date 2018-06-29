@@ -13,6 +13,6 @@ Para terminar de recolectar datos se debe apretar la tecla escape (Esc). Luego, 
 
 1) Para ejecutar el programa usando el código fuente se necesita usar python 3, además se necesita tener la libreria pynput
 
-`pip3 install --user pynput`
+    `pip3 install --user pynput`
 
 2) El ejecutable esta hecho para linux de 64 bits. 
