@@ -1,5 +1,7 @@
 # Data Set Generator
 
+El programa registra en un txt qué tecla y cuándo fue apretada y soltada.
+
 ## Uso
 Para usar el programa existen dos opciones, el ejecutable o el código python. En ambos se debe indicar la carpeta donde se va a guardar data set y el usuario. 
 
