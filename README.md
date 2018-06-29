@@ -9,9 +9,19 @@ Ejecutable : `./dataSetGenerator <carpeta> <usuario>`
 
 Python: `python3 dataSetGenerator.py <carpeta> <usuario>`
 
-No es necesario escribir en la consola, es preferible que se escriba en cualquier editor de texto para que leer lo que se está escribiendo.
+Se debe escribir el texto en un editor de texto para que puedan ver lo que estan escribiendo y poder corregir.
 
 Para terminar de recolectar datos se debe apretar la tecla escape (Esc). Luego, indicar si el data set creado es o no válido, si no es válido se borrará el archivo txt (En caso de pruebas o si hay demasiados errores). 
+
+## Ejemplo
+`python3 dataSetGenerator.py dataSetsMaquina Andrew`
+
+[se escribe el texto Aprendizaje de Máquinas.txt por primera vez]
+
+`python3 dataSetGenerator.py dataSetsMaquina Andrew`
+
+[se escribe el texto Aprendizaje de Máquinas.txt por segunda vez]
+
 
 ## Requerimientos
 
