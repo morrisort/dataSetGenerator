@@ -1,18 +1,18 @@
 # Data Set Generator
 
 ## Uso
-Para correr el programa se debe correr el ejecutable o el codigo python indicando la carpeta donde se va a guardar data set y el usuario
+Para usar el programa existen dos opciones, el ejecutable o el código python. En ambos se debe indicar la carpeta donde se va a guardar data set y el usuario. 
 
-ejecutable : `./dataSetGenerator <carpeta> <usuario>`
+Ejecutable : `./dataSetGenerator <carpeta> <usuario>`
 
-python: `python3 dataSetGenerator.py <carpeta> <usuario>`
+Python: `python3 dataSetGenerator.py <carpeta> <usuario>`
 
-Para terminar de recolectar datos se debe apretar la tecla escape. Luego indicar si el data set creado es o no valido, si no es valido se va a borrar (para hacer pruebas o si hay demaciados errores). 
+Para terminar de recolectar datos se debe apretar la tecla escape (Esc). Luego, indicar si el data set creado es o no válido, si no es válido se borrará el archivo txt (En caso de pruebas o si hay demasiados errores). 
 
 ## Requerimientos
 
-Para ejecutar el programa usando python se necesita tener la libreria pynput
+1) Para ejecutar el programa usando el código fuente se necesita usar python 3, además se necesita tener la libreria pynput
 
 `pip3 install --user pynput`
 
-El ejecutable esta hecho para linux de 64 bits
+2) El ejecutable esta hecho para linux de 64 bits. 
