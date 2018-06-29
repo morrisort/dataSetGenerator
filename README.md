@@ -13,7 +13,7 @@ Para terminar de recolectar datos se debe apretar la tecla escape (Esc). Luego, 
 
 ## Requerimientos
 
-1) Para ejecutar el programa usando el código fuente se necesita usar python 3, además se necesita tener la libreria pynput
+1) Para ejecutar el programa usando el código fuente se necesita usar python 3, además se necesita tener la libreria pynput. Es probable que se necesite actualizar pip.
 
     `pip3 install --user pynput`
 
