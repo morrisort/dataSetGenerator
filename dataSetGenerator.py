@@ -8,6 +8,7 @@ import datetime
 import pathlib
 import time
 import glob
+import argparse
 
 """
 This code was based on an example that can be found in:
@@ -60,12 +61,13 @@ def on_release(key):
                 outputData.close()
                 return False
 
-if len(sys.argv) != 3:
-    print('Usage: {0} <path> <user>'.format(sys.argv[0]))
-    raise SystemExit
+parser = argparse.ArgumentParser(description='Records keyboard inputs')
 
-directory = sys.argv[1]
-user = sys.argv[2]
+parser.add_argument('datasetDirectory', help='Folder where data set will be saved')
+parser.add_argument('user', help='User name')
+args = parser.parse_args(sys.argv[1:])
+directory = args.datasetDirectory
+user = args.user
 pathlib.Path(directory).mkdir(parents=True, exist_ok=True)
 dataPath = findDataNumber(user, directory)
 outputData = open(dataPath, "w")
